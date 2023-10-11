@@ -378,7 +378,7 @@ a {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 200px; /* Adjust the width as needed */
+	width: 100px; /* Adjust the width as needed */
 	height: 100px; /* Adjust the height as needed */
 	background-color: #c3a343; /* Adjust the background color as needed */
 	clip-path: polygon(0% 0%, 100% 0%, 0% 100%); /* Creates a triangle, adjust as needed */
@@ -387,7 +387,7 @@ a {
   
 /* Add these styles to your existing stylesheet or create a new one */
 .person-image {
-	max-width: 200%; /* Ensure the image doesn't exceed its container */
+	max-width: 100%; /* Ensure the image doesn't exceed its container */
 	height: auto; /* Maintain aspect ratio */
 	margin-left: auto; /* Push the image to the right */
 	display: block; /* Remove default inline spacing */
