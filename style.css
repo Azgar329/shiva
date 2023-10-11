@@ -1,0 +1,413 @@
+body {
+	font-family: 'Arial', sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(135deg, #3498db, #e74c3c);
+	color: #fff;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+  h1 {
+	font-size: 3em;
+	margin-bottom: 20px;
+  }
+
+  #countdown {
+	font-size: 2em;
+	font-weight: bold;
+	margin-bottom: 30px;
+  }
+  
+:root {
+  --primary-color: #daa520;
+  --heading-color: #c3a343;
+  --subtitle-color: #787160
+}
+
+/*body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* height: 100vh;
+    width: 100%; */
+	/*margin: 0px;
+	flex-direction: column;
+  font-family: Arial, Helvetica, Sans-serif;
+	background: linear-gradient(rgba(255,255,255,.75), rgba(255,255,255,1)), url(../assets/img/bg.jpg);
+	
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.dot{
+  width:15px;
+  height:15px;
+  position:absolute;
+  background: url(../assets/img/mapple_leaf.png);
+  background-size: 100% 100%;
+	opacity: 0.5;
+}
+
+#leavesContainer {
+  width: 100%;
+}
+
+@media (max-width:900px) {
+	img {
+		max-width: 30%;
+	}
+}
+
+.top-right-decoration {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	max-width: 30%;
+}
+
+.top-left-decoration {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	max-width: 30%;
+}
+
+.title h1 {
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 60px;
+	margin: 32px 0;
+	color: var(--heading-color);
+}
+
+.title h2 {
+	font-family: 'Dancing Script', cursive;
+	font-weight: bold;
+	font-style: normal;
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	color: #daa520;
+	line-height: 1;
+}
+
+.dance-med {
+	font-family: 'Dancing Script', cursive;
+	font-weight: bolder;
+	font-style: normal;
+	font-size: 32px;
+	color: var(--subtitle-color);
+	margin: 2px 16px 40px 16px;
+	text-align: center;
+}
+
+.title h3 {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 24px;
+	color: var(--heading-color);
+	margin-top: 5px;
+}
+
+.title p {
+	color: var(--heading-color);
+	margin: 30px 0px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 16px;
+
+}
+
+.wrap {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	/* padding: 20px; */
+	text-align: center;
+	/* min-height:100%; */
+	margin: 8px;
+}
+
+
+/** **/
+
+* {
+	/* margin: 0;
+    padding: 0; */
+	font-family: 'Arvo', serif;
+}
+
+
+.title {
+	margin-bottom: 40px;
+}
+
+
+.venue {
+	width: auto;
+	height: auto;
+	background-color: var(--subtitle-color);
+	border-radius: 16px;
+	text-align: center;
+	color: #fff;
+	padding: 8px 16px;
+}
+
+.venue a {
+	text-decoration: none;
+	color: #fff;
+}
+.venue.margin-left {
+	margin-left: 16px;
+}
+.venue.margin-right {
+	margin-left: 16px;
+}
+
+.time-wrapper {
+	width: 65%;
+}
+
+@media (max-width:900px) {
+	.time-wrapper {
+		width: 90%;
+	}
+}
+
+@media (max-width:1024px) {
+	.actions.calendar {
+		display: none;
+	}
+}
+
+#time {
+	width: 100%;
+	margin-bottom: 40px;
+	text-align: center;
+	color: var(--subtitle-color);
+}
+
+.countdown {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+	font-size: 3rem;
+}
+
+@media (max-width:900px) {
+
+	.day,
+	.hour,
+	.minute,
+	.second {
+		font-size: 2rem;
+	}
+}
+
+.date {
+	color: var(--subtitle-color);
+	font-weight: 900;
+}
+
+.place {
+	color: var(--subtitle-color);
+	font-weight: 900;
+}
+
+.end-msg {
+	width: auto;
+	height: auto;
+	padding: 12px;
+	background: linear-gradient(90deg, #b33a46, #9b313c);
+	border-radius: 20px;
+	font-size: 14px;
+	color: #fff;
+	font-size: 24px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.music {
+	display: none;
+}
+
+.actions {
+	display: flex;
+	font-size: 12px;
+	letter-spacing: 0pt;
+	margin-bottom: 24px;
+}
+
+.tiny {
+	font-size: 10px;
+	font-weight: 100;
+}
+
+
+.social-media-section {
+	width: 90%;
+	padding-bottom: 16px;
+}
+@media (min-width:425px) and (max-width:768px) {
+	.social-media-section {
+		width: 80%;
+	}
+}
+@media (min-width:769px) and (max-width:899px) {
+	.social-media-section {
+		width: 75%;
+	}
+}
+
+
+@media (min-width:900px) {
+	.social-media-section {
+		width: 50%;
+	}
+}
+
+.social-media-section .heading {
+	color: var(--heading-color);
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.social-media-section .items {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 2rem;
+}
+
+.social-media-section .items a {
+	color: var(--subtitle-color)
+}
+.title .address p {
+	margin:20px 0px;
+}
+
+.title .time {
+	margin:20px 0px;
+}
+.dua {
+  font-size: 2rem;
+}
+@media (max-width:900px) {
+	.dua {
+		font-size: 1.5rem;
+	}
+}
+.arabic {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  direction: rtl;
+}
+
+
+.gold-text {
+	color: var(--heading-color);
+	-webkit-text-fill-color: transparent;
+	background: -webkit-linear-gradient(transparent, transparent), url(/assets/img/gold_v2.png) repeat;
+	background: -o-linear-gradient(transparent, transparent);
+	-webkit-background-clip: text;
+}
+.gold-background {
+	background:var(--heading-color);
+}
+
+
+.video{ 
+	margin: -8px;
+	padding-bottom: 50px;
+	padding-top: 50px; 
+	width: 100%;
+}
+.video video{ 
+	object-fit:cover;
+	max-height: 60vh;
+	z-index: -999;
+	width: inherit;
+	width: -webkit-fill-available;
+}
+@media (min-width:425px) and (max-width:768px) {
+	.video video {
+		max-height: 60vh;
+	}
+}
+@media (min-width:769px) and (max-width:899px) {
+	.video video {
+		max-height: 60vh;
+	}
+}
+
+
+@media (min-width:900px) {
+	.video video {
+		max-height: 80vh;
+	}
+}
+.top-left-decoration {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px; /* Adjust the width as needed */
+	height: 100px; /* Adjust the height as needed */
+	background-color: #c3a343; /* Adjust the background color as needed */
+	clip-path: polygon(0% 0%, 100% 0%, 0% 100%); /* Creates a triangle, adjust as needed */
+  }
+  
+  
+/* Add these styles to your existing stylesheet or create a new one */
+.person-image {
+	max-width: 200%; /* Ensure the image doesn't exceed its container */
+	height: auto; /* Maintain aspect ratio */
+	margin-left: auto; /* Push the image to the right */
+	display: block; /* Remove default inline spacing */
+	border-radius: 8px; /* Add border-radius for rounded corners, adjust as needed */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  }
+
+.body-wrapper {
+	display: flex;
+  }
+  
+  .person-image {
+	max-width: 100%; /* Ensure the image doesn't exceed its container */
+	height: auto; /* Maintain aspect ratio */
+	border-radius: 20px; /* Add border-radius for rounded corners, adjust as needed */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  }
+  
+  .content {
+	flex-grow: 1;
+	padding: 20px; /* Optional: Add padding for spacing */
+  }
+  
