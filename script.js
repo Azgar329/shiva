@@ -1,7 +1,7 @@
 // Assuming script.js content
 
 // Get the target date for the countdown
-const targetDate = new Date("Oct 20, 2023 18:30:00").getTime();
+const targetDate = new Date("Oct 31, 2023 18:30:00").getTime();
 
 // Update the countdown every second
 const countdownInterval = setInterval(function () {
