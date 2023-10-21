@@ -410,4 +410,41 @@ a {
 	flex-grow: 1;
 	padding: 20px; /* Optional: Add padding for spacing */
   }
-  
+  /* Add these styles to your existing stylesheet or create a new one */
+.items {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2rem; /* Adjust the font size as needed */
+}
+
+.items a {
+  color: var(--subtitle-color);
+  text-decoration: none;
+}
+
+/* Add the following styles for Font Awesome icons */
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-phone:before {
+  content: '\f095'; /* Phone icon */
+}
+
+.fa-whatsapp:before {
+  content: '\f232'; /* Whatsapp icon */
+}
+
+.fa-facebook:before {
+  content: '\f09a'; /* Facebook icon */
+}
+
+.fa-instagram:before {
+  content: '\f16d'; /* Instagram icon */
+}
+
